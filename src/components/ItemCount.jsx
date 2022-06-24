@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 
 // Contador que no baje del numero 2 y tampoco suba del stock
 
-const ItemCount = ({ stock, initial = 2, onAdd }) => {
+const ItemCount = ({ maximo, initial = 2, onAdd }) => {
     const [cuenta, setCuenta] = useState(initial)
 
     const sumar = () => {
-        cuenta < stock && setCuenta(cuenta + 1)
-        cuenta >= stock && alert('No hay stock')
+        cuenta < maximo && setCuenta(cuenta + 1)
+        cuenta >= maximo && alert('No hay stock')
         //condicion entonces ejecuta esto
     }
 

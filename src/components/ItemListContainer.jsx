@@ -10,7 +10,7 @@ const ItemListContainer = ({ saludo }) => {
     return (
         <>
             <h1 className='text-3xl font-bold'>{saludo}</h1>
-            <ItemCount stock={5} onAdd={onAdd} />
+            <ItemCount maximo={5} onAdd={onAdd} />
         </>
     )
 }
